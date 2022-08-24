@@ -43,18 +43,13 @@ function navbar() {
               <li>WEATHER</li>
               <li>TV SCHEDULE</li>
               <li>TRAINS</li>
+             
           </ul> -->
       <div class="social_logo">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077032.png?w=1060&t=st=1661276378~exp=1661276978~hmac=49a454a3601fde4bb819130eff1e764dc70375039414c6bb7793ab7b76a297b3"
-          alt="twitter"
-        />
+       <i class="uil uil-twitter"></i>
       </div>
       <div class="social_logo">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1216/1216831.png?w=1060&t=st=1661276308~exp=1661276908~hmac=a22619d47bd73e5d3f34c3c003470abd802c360746e9386b7db12458f383b9e9"
-          alt="facebook"
-        />
+       <i class="uil uil-facebook"></i>
       </div>
       <div class="social_logo">
         <img
@@ -69,16 +64,10 @@ function navbar() {
         />
       </div>
       <div class="social_logo">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1214/1214512.png?w=1060&t=st=1661277539~exp=1661278139~hmac=6c6a82418bdddd5287e4295c0b6e3d2019def3d1e364203a326872ebcd7a1200"
-          alt="notification"
-        />
+        <i class="uil uil-bell"></i>
       </div>
       <div class="social_logo">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1246/1246347.png?w=1060&t=st=1661277860~exp=1661278460~hmac=d2262b1a7a67a46655771b70535927cc309a78a774fa6a0b50667a46dfa7a235"
-          alt="search"
-        />
+        <i class="uil uil-search"></i>
       </div>
     </div>
   </div>`;

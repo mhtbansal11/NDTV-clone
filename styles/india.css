@@ -1,31 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+#top_stories{
+    width: 15%;
+    height: auto;
+    border: 2px solid;
+    margin-right: 10px;
+}
+#last {
+    width: 15%;
+    height: auto;
+    border: 2px solid;
+    
+}
+#center{
+    width: 68%;
+    height: auto;
+    margin: 0 10px;
+    border: 2px solid;
+}
+#rouat{
+    width: 80%;
+    margin: 15px auto;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+#rouat i{
+    font-size: 18px;
+}
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
   }
-  #container {
+  #containers {
+    width: 100%;
     padding: 10px;
-    background-color: #3e3e3e;
+    background-color: #fafafa;
   }
   #navbar1 {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
-    color: #b1b1b1;
+    color: #bdb2b6;
     font-size: 13px;
+    background-color:white;
     margin-bottom: 7px;
   }
   #navbar1 > div {
     padding: 5px;
   }
-  #navbar1 > div:hover {
-    background-color: #212121;
-    border-radius: 5px;
-  }
+ 
+
   #navbar2 {
     width: 80%;
     margin: auto;
@@ -35,7 +76,7 @@
     font-size: 17px;
     justify-content: space-between;
     padding: 5px 10px;
-    color: white;
+    color: #bdb2b6;
   }
   #navbar2 > div {
     width: 6%;
@@ -44,8 +85,7 @@
     align-items: center;
   }
   #navbar2 > div:hover {
-    background-color: #212121;
-    border-radius: 5px;
+    cursor: pointer;
   }
   #navbar2 > div > img {
     width: 30%;
