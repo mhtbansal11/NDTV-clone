@@ -25,7 +25,7 @@ function navbar() {
       </div>
       <div>LIVE TV</div>
       <div>LATEST</div>
-      <div>INDIA</div>
+      <div><a href="/india.html">INDIA</a></div>
       <div>COVID</div>
       <div>OPINION</div>
       <div>VIDEO</div>

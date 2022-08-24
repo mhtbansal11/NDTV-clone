@@ -151,3 +151,22 @@ a{
     font-size: 45px;
     font-weight: 900;
   }
+  #two{
+    display: flex;
+  }
+  #place{
+    text-transform: uppercase;
+    margin-left: 2px;
+  }
+  #center p{
+    font-size: 18px;
+    color: #2e2e2e;
+  }
+  #title{
+    width: 80%;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  a{
+    color: blue;
+  }

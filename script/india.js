@@ -71,5 +71,5 @@ function append1(data) {
 
 function Save(el) {
     localStorage.setItem('news', JSON.stringify(el));
-    window.location.href = "india/news_detail.html";
+    window.location.href = "/india/news_detail.html";
 }
