@@ -3,7 +3,7 @@ document.getElementById("navbar").innerHTML = navbar();
 
 
 let get = async () => {
-    let url = `http://api.mediastack.com/v1/news?access_key=b1b29ee5cbf14c364b53f30b96fa87bc&languages=en&countries=in`;
+    let url = `http://api.mediastack.com/v1/news?access_key=70e250225f82fd05fd9a1daf86aa4a2a&languages=en&countries=in&limit=100`;
     let res = await fetch(url)
     let data = await res.json()
     console.log(data.data)
@@ -61,7 +61,15 @@ function append1(data) {
         div.setAttribute('id','headline')
         div1.append(img, div)
         div1.setAttribute('id', 'second')
+        div1.addEventListener('click', function () {
+            Save(el)
+        })
 
         container.append(div1); 
     });
+}
+
+function Save(el) {
+    localStorage.setItem('news', JSON.stringify(el));
+    window.location.href = "india/news_detail.html";
 }
