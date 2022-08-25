@@ -39,24 +39,26 @@ function append(data) {
 let container = document.getElementById('center')
 let div1 = document.createElement('div')
 let img = document.createElement('img')
-img.src = ele.image;
+img.src = ele.urlToImage;
 let title = document.getElementById('title')
 title.innerText = ele.title;
 let press = document.getElementById('Desc')
-press.innerText = `Press ${ele.source}`;
+press.innerText = `Press ${ele.source.name}`;
 let date = document.getElementById('Date')
-date.innerText = ` | Updated: ${ele.published_at}`;
+date.innerText = ` | Updated: ${ele.publishedAt}`;
 let place = document.getElementById('Place')
 place.innerText = `,${ele.country}`;
 let des = document.createElement('p')
 des.innerText = ele.description;
-div1.append(img, des)
+let con = document.createElement('p')
+con.innerText = ele.content;
+div1.append(img, des,con)
 container.append(div1);
 let newsline = document.getElementById('newsline')
 newsline.innerText=ele.title
 
 let newslin = document.getElementById('newspage')
-newslin.innerHTML = "All India"
+newslin.innerHTML = "Trending News"
 
 
 function save(el) {

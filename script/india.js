@@ -30,13 +30,17 @@ function append(data) {
 
         div.append(category,title)
         div1.append(img, div)
-        div1.setAttribute('id','first')
+        div1.setAttribute('id', 'first')
+        div1.addEventListener('click', function () {
+            dave(el)
+        })
         container1.append(div1,hr)
 
     });
 }
 function append1(data) {
     let container = document.getElementById('center')
+    container.innerHTML=null
     data.forEach((el) => {
         let div = document.createElement('div')
         let div1 = document.createElement('div')
@@ -71,5 +75,11 @@ function append1(data) {
 
 function Save(el) {
     localStorage.setItem('news', JSON.stringify(el));
-    window.location.href = "/india/news_detail.html";
+    window.location.href = "india/news_detail.html";
 }
+function dave(el) {
+    localStorage.setItem('news', JSON.stringify(el));
+    window.location.href = "india/trend_news.html";
+}
+
+

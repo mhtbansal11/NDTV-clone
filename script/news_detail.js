@@ -3,14 +3,24 @@ document.getElementById("navbar").innerHTML = navbar();
 
 let ele=JSON.parse(localStorage.getItem('news'))
 
-let get = async () => {
-    let url = `http://api.mediastack.com/v1/news?access_key=70e250225f82fd05fd9a1daf86aa4a2a&languages=en&countries=in&limit=100`;
+// let get = async () => {
+//     let url = `http://api.mediastack.com/v1/news?access_key=70e250225f82fd05fd9a1daf86aa4a2a&languages=en&countries=in&limit=100`;
+//     let res = await fetch(url)
+//     let data = await res.json()
+//     console.log(data.data)
+//     append(data.data)
+// }
+// get()
+let gets = async () => {
+    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
     let res = await fetch(url)
     let data = await res.json()
-    console.log(data.data)
-    append(data.data)
+    console.log(data.articles)
+    append(data.articles)
+
+
 }
-get()
+gets()
 
 
 function append(data) {
@@ -19,13 +29,13 @@ function append(data) {
         let div = document.createElement('div')
         let div1 = document.createElement('div')
         let img = document.createElement('img')
-        img.src = el.image
-        let category = document.createElement('h6')
-        category.innerText = el.category;
+        img.src = el.urlToImage
+        // let category = document.createElement('h6')
+        // category.innerText = el.category;
         let title = document.createElement('h5')
         title.innerText = el.title;
         let hr = document.createElement('hr')
-        div.append(category, title)
+        div.append(title)
         div1.append(img, div)
         div1.setAttribute('id', 'first')
         div1.addEventListener('click', function () {
@@ -39,7 +49,7 @@ function append(data) {
 
 
 let container = document.getElementById('center')
-container.innerHTML=""
+
     let div1 = document.createElement('div')
     let img = document.createElement('img')
     img.src = ele.image;
@@ -63,12 +73,12 @@ newsline.innerText = ele.title
 
 let newslin = document.getElementById('newspage')
 newslin.innerHTML = "All India"
-newslin.onclick=functio()
+
 
 function save(el) {
     localStorage.setItem('news', JSON.stringify(el));
     window.location.href = "../india/trend_news.html";
 }
-function functio() {
-    window.location.href="/india.html"
-}
+// function functio() {
+//     window.location.href="/india.html"
+// }
