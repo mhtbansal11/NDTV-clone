@@ -11,18 +11,16 @@
 }
 #top_stories{
     width: 15%;
-    height: auto;
     margin-right: 10px;
 }
 #last {
-    width: 15%;
-    height: auto;    
+    width: 15%;   
 }
 #center{
     width: 68%;
-    height: auto;
     margin: 0 10px;
-  
+  display: grid;
+  border: 1px solid;
 }
 #rouat{
     width: 80%;
@@ -198,7 +196,7 @@ a{
     margin: 10px auto;
   }
      #footer div div {
-       width: 87%;
+       width:80%;
        margin: auto;
      }
          #footer div div i{
