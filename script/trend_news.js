@@ -51,9 +51,6 @@ place.innerText = `,${ele.country}`;
 let des = document.createElement('p')
 des.innerText = ele.description;
 div1.append(img, des)
-
-
-
 container.append(div1);
 let newsline = document.getElementById('newsline')
 newsline.innerText=ele.title
