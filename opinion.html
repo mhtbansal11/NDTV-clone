@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+
+        }
+
+        #mininav {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 38px 402px 20px 42px;
+        }
+
+        #m1 {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 12px;
+
+        }
+
+        #m2 {
+            display: flex;
+            width: 90%;
+            gap: 55%;
+            align-items: center;
+        }
+
+        #m2 h1 {
+            font-size: 40px;
+        }
+
+        #ar::after {
+            display: inline-block;
+            content: "";
+            margin: 0 15px 0 4px;
+            border: solid #2E2E2E;
+            border-width: 0 1px 1px 0;
+            padding: 3px;
+            -webkit-transform: rotate(-45deg);
+            position: relative;
+
+        }
+
+        #search {
+            background-color: #fafafa;
+            width: 20%;
+            height: 40px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        #s {
+            outline: none;
+            border: none;
+            background-color: gray;
+            width: 100%;
+            padding: 9px 4px 9px 40px;
+            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+        }
+
+        .featur {
+            display: flex;
+
+            justify-content: center;
+
+
+        }
+
+        #postdiv {
+            display: flex;
+            margin: 30px;
+            padding: 30px;
+            background-color: #fafafa;
+            gap: 39px;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        #postdiv:hover {
+            box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 10px 0px;
+            background-color: white;
+        }
+
+        #postdiv div {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 180px;
+            height: 205px;
+            gap: 16px;
+            font-size: 16px;
+
+        }
+
+        #postdiv div a {
+            text-decoration: none;
+            color: #2e2e2e;
+        }
+
+        #postdiv div a:nth-child(3) {
+            color: #b2112c;
+
+        }
+
+        #postdiv div img {
+            border-radius: 3px;
+        }
+
+        #short {
+            margin-left: 70px;
+            margin-right: 42px;
+            display: flex;
+            align-items: baseline;
+            padding: 5px 20px;
+
+            gap: 40px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 10px 0px;
+
+
+        }
+
+        h2 {
+            margin-left: 42px;
+            background-color: #245e8a;
+            width: fit-content;
+            padding: 5px 10px;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        #cnt1 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #cnt1 div {
+            background-color: #fafafa;
+            margin-left: 42px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cnt1 div h3 {
+
+            background-color: #76818a;
+            font-family: var(--ff-one);
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            text-align: left;
+            padding: 5px 30px;
+            display: table;
+            border-radius: 0px;
+            font-weight: 500;
+            color: #fff;
+            position: relative;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+
+        #cnt1 div a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #2e2e2e;
+            padding: 5px 23px 5px 20px;
+            line-height: 1.6;
+            transition: all 0.2s ease-in-out;
+            border-left: 3px solid transparent;
+            border-bottom: solid 1px #eaeaea;
+            line-height: 25px;
+        }
+
+
+
+        #cnt1 div a:hover {
+            background-color: white;
+            color: #245e8a;
+            border-left: solid 3px #25587e;
+            border-bottom: solid 1px transparent;
+
+
+        }
+
+        #container {
+            display: flex;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav"> </nav>
+
+
+
+    <div id="mininav">
+        <div id="m1">
+            <a href=",/home.html" id="ar"> Home </a>
+            <a> Opinion </a>
+        </div>
+        <div id="m2">
+            <h1>OPINION</h1>
+            <div id="search">
+                <input type="search" id="s" placeholder="Option">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2>Featured Posts:</h2>
+
+
+
+
+    <div class="featur">
+
+        <nav id="postdiv">
+
+            <div>
+                <img src="https://i.ndtvimg.com/i/2016-12/swati-chaturvedi_275x100_61483116997.jpg" alt="">
+                <a href="">Opinion: Congress's Latest Big Blunder Reveals Its Fear Of Kejriwal</a>
+                <a href="">Swati Chaturvedi</a>
+            </div>
+            <div>
+                <img src="https://c.ndtvimg.com/mrsbi67_ashutosh-new-275_275x100_29_August_18.jpg" alt="">
+                <a href="">Opinion: The Timing Of Manish Sisodia's Raids Says Everything</a>
+                <a href=""> Ashutosh </a>
+            </div>
+            <div>
+                <img src="https://c.ndtvimg.com/2020-08/rke5h8vg_praveen-chakravarty-275_275x100_31_August_20.jpg"
+                    alt="">
+                <a href="">Opinion: Is The 'Freebies' Debate Genuine Or A PM Modi 'Master Stroke'?</a>
+                <a href=""> Praveen Chakravarty </a>
+            </div>
+            <div>
+                <img src="https://i.ndtvimg.com/i/2017-07/javed-ansari-275_275x100_61499928478.jpg" alt="">
+                <a href="">Opinion: Arvind Kejriwal, Ahead Of The Others, Stakes A Claim To 2024</a>
+                <a href="">Javed M. Ansari </a>
+            </div>
+        </nav>
+
+        <div id="short">
+            <h5>SHORTS VIDEOS</h5>
+            <a>By firework</a>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="container">
+        <div id="cnt1">
+
+
+
+            <div>
+                <h3>COLUMNISTS</h3>
+                <a href="">Ashutosh</a>
+                <a href="">Brinda Karat</a>
+                <a href="">Chandan Mitra</a>
+                <a href="">Derek O'Brien</a>
+                <a href="">Maitreesh Ghatak</a>
+                <a href="">Mani Shankar Aiyar</a>
+                <a href="">Mihir Swarup Sharma</a>
+                <a href="">Shobhaa De</a>
+                <a href="">Swati Chaturvedi</a>
+                <a href="">Yashwant Sinha</a>
+                <a href="">More Columnists </a>
+
+
+            </div>
+
+
+            <div>
+                <h3> BLOGGERS</h3>
+                <a href="">Aunindyo Chakravarty </a>
+                <a href="">Jyotsna Mohan Bhargava</a>
+                <a href="">Ravish Kumar</a>
+                <a href="">Dr. Rajnish Jaiswal </a>
+                <a href=""> Manika Raikwar Ahirwal</a>
+                <a href="">IP Bajpai</a>
+                <a href=""> Rohit Khilnani </a>
+                <a href="">Saurabh Gupta</a>
+                <a href="">More Bloggers </a>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div id="cnt2">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="./opinion.js" type="module"></script>
