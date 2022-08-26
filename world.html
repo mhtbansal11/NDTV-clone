@@ -1,87 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World News</title>
-    <link rel="stylesheet" href="./styles/world.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/world.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+  <body>
     <div id="navbar"></div>
+    <p><a href="#">Home > </a>World News</p>
     <div id="container1">
-        <p><a href="#">Home</a> > World News</p>
-        <h1>World News</h1>
-        <select id="country" onchange="worldNewsCountry()">
-            <option value="ar" onclick="worldNewsCountry()">Argentina</option>
-            <option value="au" onclick="worldNewsCountry()">Australia</option>
-            <option value="at" onclick="worldNewsCountry()">Austria</option>
-            <option value="be" onclick="worldNewsCountry()">Belgium</option>
-            <option value="br" onclick="worldNewsCountry()">Brazil</option>
-            <option value="bg" onclick="worldNewsCountry()">Bulgaria</option>
-            <option value="ca" onclick="worldNewsCountry()">Canada</option>
-            <option value="cn" onclick="worldNewsCountry()">China</option>
-            <option value="co" onclick="worldNewsCountry()">Colombia</option>
-            <option value="cz" onclick="worldNewsCountry()">Czech Republic</option>
-            <option value="eg" onclick="worldNewsCountry()">Egypt</option>
-            <option value="fr" onclick="worldNewsCountry()">France</option>
-            <option value="de" onclick="worldNewsCountry()">Germany</option>
-            <option value="gr" onclick="worldNewsCountry()">Greece</option>
-            <option value="hk" onclick="worldNewsCountry()">Hong Kong</option>
-            <option value="hu" onclick="worldNewsCountry()">Hungary</option>
-            <option value="in" onclick="worldNewsCountry()">India</option>
-            <option value="id" onclick="worldNewsCountry()">Indonesia</option>
-            <option value="ie" onclick="worldNewsCountry()">Ireland</option>
-            <option value="il" onclick="worldNewsCountry()">Israel</option>
-            <option value="it" onclick="worldNewsCountry()">Italy</option>
-            <option value="jp" onclick="worldNewsCountry()">Japan</option>
-            <option value="lv" onclick="worldNewsCountry()">Latvia</option>
-            <option value="lt" onclick="worldNewsCountry()">Lithuania</option>
-            <option value="my" onclick="worldNewsCountry()">Malaysia</option>
-            <option value="mx" onclick="worldNewsCountry()">Mexico</option>
-            <option value="ma" onclick="worldNewsCountry()">Morocco</option>
-            <option value="nl" onclick="worldNewsCountry()">Netherlands</option>
-            <option value="nz" onclick="worldNewsCountry()">New Zealand</option>
-            <option value="ng" onclick="worldNewsCountry()">Nigeria</option>
-            <option value="no" onclick="worldNewsCountry()">Norway</option>
-            <option value="ph" onclick="worldNewsCountry()">Phillipines</option>
-            <option value="pl" onclick="worldNewsCountry()">Poland</option>
-            <option value="pt" onclick="worldNewsCountry()">Portugal</option>
-            <option value="ro" onclick="worldNewsCountry()">Romania</option>
-            <option value="sa" onclick="worldNewsCountry()">Saudi Arabia</option>
-            <option value="rs" onclick="worldNewsCountry()">Serbia</option>
-            <option value="sg" onclick="worldNewsCountry()">Singapore</option>
-            <option value="sk" onclick="worldNewsCountry()">Slokavia</option>
-            <option value="si" onclick="worldNewsCountry()">Slovenia</option>
-            <option value="za" onclick="worldNewsCountry()">South Africa</option>
-            <option value="kr" onclick="worldNewsCountry()">South Korea</option>
-            <option value="se" onclick="worldNewsCountry()">Sweden</option>
-            <option value="ch" onclick="worldNewsCountry()">Switzerland</option>
-            <option value="tw" onclick="worldNewsCountry()">Taiwan</option>
-            <option value="th" onclick="worldNewsCountry()">Thailand</option>
-            <option value="tr" onclick="worldNewsCountry()">Turkey</option>
-            <option value="ae" onclick="worldNewsCountry()">UAE</option>
-            <option value="ua" onclick="worldNewsCountry()">Ukraine</option>
-            <option value="gb" onclick="worldNewsCountry()">United Kingdom</option>
-            <option value="us" onclick="worldNewsCountry()">United States</option>
-            <option value="ve" onclick="worldNewsCountry()">Venuzuela</option>
-        </select>
+      <h1>World News</h1>
+      <select
+        name="country"
+        title="country"
+        id="country"
+        onchange="worldNewsCountry(this.value)"
+      >
+        <option value="worldNews">Select country here</option>
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="co">Colombia</option>
+        <option value="in">India</option>
+        <option value="ie">Ireland</option>
+        <option value="my">Malaysia</option>
+        <option value="nz">New Zealand</option>
+        <option value="ng">Nigeria</option>
+        <option value="ph">Phillipines</option>
+        <option value="sa">Saudi Arabia</option>
+        <option value="sg">Singapore</option>
+        <option value="za">South Africa</option>
+        <option value="gb">United Kingdom</option>
+        <option value="us">United States</option>
+      </select>
     </div>
     <div id="container2">
-        <div id="trending">
-            <h2>TRENDING</h2>
-            <!-- append trending/popularity fetched API data -->
-        </div>
-        <div id="world_news">
-            <!-- append world news data here and also filter by country -->
-        </div>
-        <div id="add"></div>
+      <div id="trending">
+        <h2>TRENDING</h2>
+        <!-- append trending/popularity fetched API data -->
+      </div>
+      <div id="world_news">
+        <!-- append world news data here and also filter by country -->
+      </div>
+      <div id="add">
+        <video controls loop autoplay >
+            <source src="https://cdn4.fireworktv.com/medias/2022/8/16/1660653072-vozrwsfb/watermarked/540/bulk_import_4189070-1660653027-gdrive-2-15_1_6.mp4" type="video/mp4" >
+        </video>
+        <video controls loop autoplay >
+            <source src="https://cdn4.fireworktv.com/medias/2022/8/24/1661342682-mrpeixcg/watermarked/540/bulk_import_6432809-1661342649-gdrive-2-20_2_4.mp4" type="video/mp4" >
+        </video>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script type="module">
-    import navbar from "./components/navbar.js";
-    document.querySelector("#navbar").innerHTML += navbar();
-  </script>
+  import navbar from "./components/navbar.js";
+  document.querySelector("#navbar").innerHTML += navbar();
+</script>
 <script src="./scripts/world.js"></script>

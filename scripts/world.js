@@ -1,11 +1,14 @@
 let trending;
 let worldNews;
+let key = "12bb5c24fa8345d9a01612d2c7b9a129";
 async function myTrending() {
   // in try put whatever we want to work
   try {
     let stream = await fetch(
-      "https://newsapi.org/v2/top-headlines?language=en&sortBy=popularity&apiKey=01e4b4bb46844c7f85fac3ee76078269"
+      `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}&pageSize=10`
     );
+    // https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey
+
     // convert the stream into actual data
     let data = await stream.json();
     trending = data.articles;
@@ -21,7 +24,7 @@ myTrending();
 async function myWorldNews() {
   try {
     let stream = await fetch(
-      "https://newsapi.org/v2/top-headlines?language=en&apiKey=01e4b4bb46844c7f85fac3ee76078269"
+      `https://newsapi.org/v2/top-headlines?language=en&apiKey=${key}`
     );
     // convert the stream into actual data
     let data = await stream.json();
@@ -35,18 +38,22 @@ async function myWorldNews() {
 }
 myWorldNews();
 
-async function worldNewsCountry() {
+async function worldNewsCountry(value) {
   try {
-    let country = document.getElementById("country").value;
-    console.log("country:",country)
-    let stream = await fetch(
-      `https://newsapi.org/v2/top-headlines?language=en&country=${country}&apiKey=01e4b4bb46844c7f85fac3ee76078269`
-    );
-    // convert the stream into actual data
-    let data = await stream.json();
-    worldNewsCountry = data.articles;
-    console.log("worldNewsCountry:", worldNewsCountry);
-    worldNewsAppend(worldNewsCountry);
+    // let country = document.getElementById("country").value;
+    // console.log("country:",country)
+    if (value == "worldNews") {
+      myWorldNews();
+    } else {
+      let stream = await fetch(
+        `https://newsapi.org/v2/top-headlines?language=en&country=${value}&apiKey=${key}`
+      );
+      // convert the stream into actual data
+      let data = await stream.json();
+      CountryNews = data.articles;
+      console.log("CountryNews:", CountryNews);
+      worldNewsAppend(CountryNews);
+    }
   } catch (err) {
     // in catch put the error part
     console.log("err", err);
@@ -96,7 +103,7 @@ function worldNewsAppend(data) {
     desc.innerText = element.description;
     let published = document.createElement("p");
     published.innerText = `${element.source.name} | ${element.publishedAt}`;
-    published.className = "publish"
+    published.className = "publish";
     // if (element.urlToImage === null) {
     //   let img = document.createElement("img");
     //   img.src ="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/11/05/Pictures/_8ba2e79a-a350-11e6-93ed-ab826829dd0b.png"
