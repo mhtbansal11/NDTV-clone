@@ -4,44 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World News</title>
-    <link rel="stylesheet" href="./styles/world.css" />
+    <title>Entertainment News</title>
+    <link rel="stylesheet" href="./styles/entertainment.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
   </head>
   <body>
     <div id="navbar"></div>
-    <p><a href="./index.html">Home > </a>World News</p>
+    <p><a href="./index.html">Home > </a>Entertainment News</p>
     <div id="container1">
-      <h1>World News</h1>
-      <select
-        name="country"
-        title="country"
-        id="country"
-        onchange="worldNewsCountry(this.value)"
-      >
-        <option value="worldNews">Select country here</option>
-        <option value="au">Australia</option>
-        <option value="ca">Canada</option>
-        <option value="co">Colombia</option>
-        <option value="in">India</option>
-        <option value="ie">Ireland</option>
-        <option value="my">Malaysia</option>
-        <option value="nz">New Zealand</option>
-        <option value="ng">Nigeria</option>
-        <option value="ph">Phillipines</option>
-        <option value="sa">Saudi Arabia</option>
-        <option value="sg">Singapore</option>
-        <option value="za">South Africa</option>
-        <option value="gb">United Kingdom</option>
-        <option value="us">United States</option>
-      </select>
+      <h1>Entertainment News</h1>
     </div>
     <div id="container2">
       <div id="trending">
         <h2>TRENDING</h2>
         <!-- append trending/popularity fetched API data -->
       </div>
-      <div id="world_news">
+      <div id="entertainment">
         <!-- append world news data here and also filter by country -->
       </div>
       <div id="add">
@@ -59,4 +37,4 @@
   import navbar from "./components/navbar.js";
   document.querySelector("#navbar").innerHTML += navbar();
 </script>
-<script src="./scripts/world.js"></script>
+<script src="./scripts/entertainment.js"></script>

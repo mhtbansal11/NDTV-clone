@@ -1,8 +1,7 @@
-
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color:#eaeaea
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea;
+}
 
 * {
   margin: 0%;
@@ -27,7 +26,7 @@
       align-items: center; */
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    background-color: white;
+  background-color: white;
 }
 #business:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
@@ -35,7 +34,7 @@
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-#business >a> h2 {
+#business > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -85,22 +84,23 @@
 }
 
 #entertainment {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #entertainment:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#entertainment >a> h2 {
+#entertainment > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -150,22 +150,23 @@
 }
 
 #general {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #general:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#general >a> h2 {
+#general > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -214,24 +215,24 @@
   border-radius: 5px;
 }
 
-
 #health {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #health:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#health >a> h2 {
+#health > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -280,25 +281,24 @@
   border-radius: 5px;
 }
 
-
-
 #science {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #science:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#science >a> h2 {
+#science > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -347,24 +347,24 @@
   border-radius: 5px;
 }
 
-
 #sports {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #sports:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#sports >a> h2 {
+#sports > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -413,24 +413,24 @@
   border-radius: 5px;
 }
 
-
 #technology {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #technology:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#technology >a> h2 {
+#technology > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
@@ -479,24 +479,24 @@
   border-radius: 5px;
 }
 
-
 #india {
-    width: 80%;
-    display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    /* justify-content: center;
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  /* justify-content: center;
         align-items: center; */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
 #india:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#india >a> h2 {
+#india > a > h2 {
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
