@@ -67,3 +67,7 @@
    i{
     font-size: 30px;
   }
+    a {
+      text-decoration: none;
+      color: #bdb2b6;
+    }

@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #eaeaea;
+  font-family: sans-serif;
+  background-color: #eaeaea
 }
 
 * {
@@ -9,11 +9,14 @@ body {
   display: block;
 }
 #category {
+  width: 90%;
+  margin:3% 9%;
+  /* margin:80px auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-content: space-between;
-  padding: 50px;
+  gap: 50px;
+  /* justify-content: space-between; */
+  /* padding: 50px; */
 }
 
 #business {
@@ -544,3 +547,177 @@ body {
   margin-right: 5px;
   border-radius: 5px;
 }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    body {
+      background-color: #eaeaea;
+    }
+  
+    #part {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 500px;
+      gap: 10px;
+    }
+  
+    #part div {
+      border-radius: 5px;
+  
+    }
+  
+    #part div img {
+      width: 301px;
+      height: 100%;
+      border-radius: 5px;
+    }
+  
+    #upon {
+      width: 15.8%;
+      height: 135px;
+      margin-top: -134px;
+      margin-left: 0px;
+      padding: 15px;
+      text-align: center;
+      background: transparent;
+      position: absolute;
+      color: white;
+      background-color: rgba(4, 31, 31, 0.875);
+    }
+  
+    #upon #btnme {
+      margin-bottom: 2;
+      margin: 0 75px;
+      background-color: yellow;
+      padding: 2px 12px;
+      border: none;
+      font-weight: 800;
+      border-radius: 3px;
+    }
+        #enter {
+          margin-bottom: 2;
+          margin: 0 75px;
+          background-color: yellow;
+          padding: 2px 12px;
+          border: none;
+          font-weight: 800;
+          border-radius: 3px;
+        }
+  
+    video {
+      width: 310px;
+      height: 100%;
+      border-radius: 10px;
+    }
+  
+    #btn {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #btn button {
+      font-weight: 800;
+      color: white;
+      padding: 2px 8px;
+      background-color: #2b2b2b;
+      border: none;
+      border-radius: 2px;
+      margin-bottom: 1px;
+      font-size: 15px;
+    }
+  
+    #btn button:last-child {
+      margin-right: 135px;
+    }
+  
+    section {
+      width: 80%;
+      height: 40vh;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      padding: 20px;
+      /* justify-content: space-evenly; */
+    }
+  
+    section div h5 {
+      text-align: left;
+      margin: 10px 160px 10px 20px;
+    }
+  
+    section div h5:last-child {
+      margin-right: 160;
+    }
+  
+    hr {
+      width: 100px;
+      margin: 10px 15px;
+    }
+  
+    #job h3 {
+      margin: 25px auto;
+    }
+  
+    #job img {
+      width: 150px;
+      height: auto;
+      margin: 15px 50px;
+      border-radius: 10px;
+    }
+  
+    #world h3 {
+      margin: 25px auto;
+    }
+  
+    #world img {
+      width: 150px;
+      height: auto;
+      margin: 15px 50px;
+      border-radius: 10px;
+    }
+  
+    #south h3 {
+      margin: 25px auto;
+    }
+  
+    #south img {
+      width: 150px;
+      height: auto;
+      margin: 15px 50px;
+      border-radius: 10px;
+    }
+  
+    #feshion h3 {
+      margin: 25px auto;
+    }
+  
+    #feshion img {
+      width: 150px;
+      height: auto;
+      margin: 15px 50px;
+      border-radius: 10px;
+    }
+  
+    #city h3 {
+      margin: 25px auto;
+    }
+  
+    #city img {
+      width: 150px;
+      height: auto;
+      margin: 15px 50px;
+      border-radius: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }

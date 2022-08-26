@@ -202,3 +202,7 @@ a{
 font-size: 14px;
 margin-right: 5px;
          }
+                 a {
+                   text-decoration: none;
+                   color: #bdb2b6;
+                 }

@@ -115,3 +115,7 @@ body > p > a {
   width: 100%;
   margin-bottom: 50px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
