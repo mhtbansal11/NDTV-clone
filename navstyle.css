@@ -1,6 +1,9 @@
         body {
             margin: 0;
+            font-family: Roboto, sans-serif;
         }
+
+        
 
         #nav1 {
             display: flex;
@@ -20,6 +23,7 @@
             padding: 2px 7px;
             border-radius: 3px;
             height: 16px;
+            line-height: 18px;
         }
 
         #nav1 a:first-child {
@@ -36,13 +40,16 @@
             align-items: center;
             padding-left: 42px;
             font-size: 12px;
-
+            position: sticky;
+            top: 0;
 
         }
 
         #nav2 a {
             text-decoration: none;
             font-family: Roboto, sans-serif;
+            line-height: 22px;
+
 
 
             color: black;
@@ -62,18 +69,25 @@
             cursor: pointer;
         }
 
-        #nav2 svg:first-child {
+        /* #nav2svg1 {
             margin-right: 121px;
 
-        }
+        } */
 
-        #nav2 svg:nth-child(2) {
-            margin-right: 66px;
-        }
+        #icon{
+            display: flex ;
+            gap: 38px ;
+           margin-left: 88px;
+            justify-content: flex-start ;
+             
+         }
 
         #nav2 img {
             width: 95px;
             height: 18px;
             margin-right: 85px;
         }
-    
+
+
+
+        
