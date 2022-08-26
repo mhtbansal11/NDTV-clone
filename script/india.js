@@ -83,11 +83,11 @@ function dave(el) {
 
 
 let gets = async () => {
-    // let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
+    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
     let res = await fetch(url)
     let data = await res.json()
-    console.log(data.data)
-    append(data.data)
+    console.log(data)
+    append(data.articles)
 
 
 }
@@ -100,7 +100,7 @@ function append(data) {
         let div1 = document.createElement('div')
 
         let img = document.createElement('img')
-        img.src = el.image
+        img.src = el.urlToImage
 
         let title = document.createElement('h5')
         title.innerText = el.title;
