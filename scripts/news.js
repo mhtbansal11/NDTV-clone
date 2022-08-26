@@ -30,7 +30,7 @@ async function myTrending() {
   // in try put whatever we want to work
   try {
     let stream = await fetch(
-      `https://newsapi.org/v2/top-headlines?language=en&sortBy=popularity&apiKey=${key}`
+      `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}&pageSize=10`
     );
     // convert the stream into actual data
     let data = await stream.json();
