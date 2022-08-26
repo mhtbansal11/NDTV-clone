@@ -1,0 +1,286 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            body {
+                background-color: #eaeaea;
+            }
+
+            #part {
+                width: 80%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 500px;
+                gap: 10px;
+            }
+
+            #part div {
+                border-radius: 5px;
+
+            }
+
+            #part div img {
+                width: 301px;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            #upon {
+                width: 15.6%;
+                height: 135px;
+                margin-top: -134px;
+                margin-left: 0px;
+                padding: 15px;
+                text-align: center;
+                background: transparent;
+                position: absolute;
+                color: white;
+                background-color: rgba(4, 31, 31, 0.875);
+            }
+
+            #upon button {
+                margin-bottom: 2;
+                background-color: yellow;
+                padding: 2px 12px;
+                border: none;
+                font-weight: 800;
+                border-radius: 3px;
+            }
+
+            video {
+                width: 310px;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            #btn {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #btn button {
+                font-weight: 800;
+                color: white;
+                padding: 2px 8px;
+                background-color: #2b2b2b;
+                border: none;
+                border-radius: 2px;
+                margin-bottom: 1px;
+                font-size: 15px;
+            }
+
+            #btn button:last-child {
+                margin-right: 155px;
+            }
+
+            section {
+                width: 80%;
+                height: 50vh;
+                margin: 50px auto;
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                padding: 20px;
+                /* justify-content: space-evenly; */
+            }
+
+            section div h5 {
+                text-align: left;
+                margin: 10px 160px 10px 20px;
+            }
+
+            section div h5:last-child {
+                margin-right: 150;
+            } 
+            hr{
+                width: 100px;
+                margin: 10px 15px;
+            }
+            #job h3{
+                margin: 25px auto;
+            }  
+            #job img{
+                width: 150px;
+                height: auto;
+                margin: 15px 50px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="btn">
+            <button>ICYMI</button>
+            <button>SHORT VIDEOS</button>
+        </div>
+        <div id="part">
+            <div id="hover"><img
+                    src="https://c.ndtvimg.com/2022-08/0cqbs97g_liger-review_295x200_25_August_22.jpg?downsize=315:350">
+                <div onmouseover="Hover()" id="upon"><button>MOVIE REVIE</button>
+                    <h3>Review:Liger - Vijay Deverakonda Can't Salvage Massive Mess</h3>
+                </div>
+            </div>
+            <div id="hover"><img
+                    src="https://c.ndtvimg.com/2022-08/9o2frmho_sheldon-jackson-instagram_295x200_25_August_22.jpg?downsize=315:350">
+                <div onmouseover="Hover()" id="upon"><button>CRICKET</button>
+                    <h3>Fan Tells Indian Cricketer "You Were Terrible In IPL". Player Responds</h3>
+                </div>
+            </div>
+            <div id="hover"><img
+                    src="https://c.ndtvimg.com/2022-08/i0c6me4o_malaika-arora_295x200_25_August_22.jpg?downsize=315:350">
+                <div onmouseover="Hover()" id="upon"><button>ENTERTAINMENT</button>
+                    <h3>Malaika Arora & Ex-Husband Arbaaz Khan Pictured & Arhaan At The Airport</h3>
+                </div>
+            </div>
+            <div id="hover"><img
+                    src="https://c.ndtvimg.com/2022-08/b007cqv8_esha-gupta_270x300_25_August_22.jpg?downsize=315:350">
+                <div onmouseover="Hover()" id="upon"><button>FASHION</button>
+                    <h3>Jaws Are Bound To Drop When Esha Gupta EntersThe Room In Striking Gown</h3>
+                </div>
+            </div>
+            <div id="hover"><video
+                    src="https://cdn4.fireworktv.com/medias/2022/8/22/1661176907-rwegcdxy/watermarked/540/bulk_import_50887407-1661176868-gdrive-3-25_2_4.mp4"
+                    autoplay muted controls loop></video></div>
+        </div>
+        <section>
+            <div>
+                <h5>CITIES</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>SOUTH NEWS</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>WORLD NEWS</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>PEOPLE</h5>
+                <div></div>
+            </div>
+            <hr>
+            <div>
+                <h5>JOBS</h5>
+                <div id="job"></div>
+            </div>
+            <hr>
+            <div>
+                <h5>FASHION</h5>
+            </div>
+        </section>
+    </body>
+
+</html>
+<script>
+        let url = `https://newsdata.io/api/1/news?apikey=pub_ce7ea8c6513f70ccecd1e152e928ac83&q=delhi&country=in&language=en&category=top&page=1`;
+
+    let DaTa = [];
+        let pagesize = 1;
+        let currentPage = 1;
+        async function render() {
+            await get()
+            var contain = ""
+            console.log(DaTa)
+            DaTa.filter((row, index) => {
+                let start = (currentPage - 1) * pagesize
+                let end = currentPage * pagesize
+
+                if (index >= start && index < end) return true;
+            }).forEach(el => {
+                contain += `<img id="on" src=${el.image_url}>`
+                contain += `<h3 id="on">${(el.title)}</h3>`
+                contain+='<hr>'
+                contain += `<p id="on">${(el.description)}</p>`
+                 
+            })
+        
+            document.getElementById('job').innerHTML = contain;
+            // console.log(contain)
+        }
+
+        render()
+//           let fal = document.getElementById('on')
+//             fal.addEventListener(falu(el))
+// function falu(el){
+//         localStorage.setItem('news', JSON.stringify(el));
+//     window.location.href = "../india/news_detail.html";
+// }
+
+     
+
+        function numberOfpage() {
+            return Math.ceil(DaTa.length / pagesize)
+
+        }
+        
+
+
+        async function get() {
+
+            let res = await fetch(url)
+            let data = await res.json()
+            DaTa = data.results
+        }
+
+
+    function append(data) {
+        let container1 = document.getElementById('job')
+             data.forEach((el) => {
+
+        if(el.image_url==null){
+                let div = document.createElement('div')
+                let div1 = document.createElement('div')
+                let img = document.createElement('img')
+                img.src = "https://i.ndtvimg.com/i/2015-06/exam-generic_650x400_51435598669.jpg?im=FaceCrop,algorithm=dnn,width=213,height=160"
+                let title = document.createElement('h5')
+                title.innerText = el.title;
+                let hr = document.createElement('hr')
+                div.append(title)
+                div1.append(img, div)
+                div1.setAttribute('id', 'first')
+                div1.addEventListener('click', function () {
+                    save(el)
+                })
+                container1.append(div1, hr)
+
+            
+        }else{
+        
+            let div = document.createElement('div')
+            let div1 = document.createElement('div')
+            let img = document.createElement('img')
+            img.src = el.image_url
+            let title = document.createElement('h5')
+            title.innerText = el.title;
+            let hr = document.createElement('hr')
+            div.append(title)
+            div1.append(img, div)
+            div1.setAttribute('id', 'first')
+            div1.addEventListener('click', function () {
+                save(el)
+            })
+            container1.append(div1, hr)
+        }
+        });
+    }
+
+    function save(el) {
+        localStorage.setItem('news', JSON.stringify(el));
+        window.location.href = "../india/news_detail.html";
+    }
+</script>

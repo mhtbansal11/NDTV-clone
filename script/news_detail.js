@@ -3,14 +3,7 @@ document.getElementById("navbar").innerHTML = navbar();
 
 let ele=JSON.parse(localStorage.getItem('news'))
 
-// let get = async () => {
-//     let url = `http://api.mediastack.com/v1/news?access_key=70e250225f82fd05fd9a1daf86aa4a2a&languages=en&countries=in&limit=100`;
-//     let res = await fetch(url)
-//     let data = await res.json()
-//     console.log(data.data)
-//     append(data.data)
-// }
-// get()
+
 let gets = async () => {
     let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
     let res = await fetch(url)
@@ -52,7 +45,7 @@ let container = document.getElementById('center')
 
     let div1 = document.createElement('div')
     let img = document.createElement('img')
-    img.src = ele.image;
+    img.src = ele.image_url;
     let title = document.getElementById('title')
     title.innerText = ele.title;
     let press = document.getElementById('desc')
