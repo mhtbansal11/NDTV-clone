@@ -67,3 +67,8 @@ function save(el) {
     window.location.href = "../india/trend_news.html";
   
 }
+
+document.getElementById('logo').addEventListener('click', home)
+function home() {
+    window.location.href = '../index.html';
+}

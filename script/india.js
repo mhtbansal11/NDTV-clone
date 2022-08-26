@@ -140,3 +140,8 @@ function append(data) {
         }
     });
 }
+
+document.getElementById('logo').addEventListener('click', home)
+function home() {
+    window.location.href = '../index.html';
+}

@@ -67,3 +67,7 @@ function trendingAppend(data) {
     trendingDiv.append(div);
   });
 }
+document.getElementById('logo').addEventListener('click', home)
+function home() {
+  window.location.href = 'index.html';
+}
