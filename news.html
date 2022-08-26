@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Detail News</title>
+    <link rel="stylesheet" href="./styles/news.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="inside"> 
+        <a href="#">Home > </a><a href="./world.html">World News ></a><p></p>
+    </div>
+    
+    <div id="container2">
+        <div id="trending">
+            <h2>Trending</h2>
+            <!-- append trending/popularity fetched API data -->
+        </div>
+        <div id="world_news">
+            <!-- append world news data here and also filter by country -->
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js/news.js" type="module">
+     import navbar from "./components/navbar.js";
+    document.querySelector("#navbar").innerHTML = navbar();
+</script>
