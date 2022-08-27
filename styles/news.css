@@ -1,10 +1,10 @@
 * {
   margin: 0%;
   padding: 0%;
-  display: block;
+  /* display: block; */
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 #inside{
   display: flex;

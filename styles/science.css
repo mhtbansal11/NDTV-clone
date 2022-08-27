@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    display: block;
+    /* display: block; */
   }
   #navbar {
       display: flex;
@@ -9,7 +9,7 @@
     top: 0;
   }
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
   }
   #container1 {
     display: flex;

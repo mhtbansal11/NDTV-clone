@@ -8,7 +8,7 @@ function footer() {
             <i class="uil uil-twitter"></i> 
             <i class="uil uil-instagram"></i>
             <i class="uil uil-linkedin"></i>
-            <img class="koo" src="https://www.logotaglines.com/wp-content/uploads/2021/10/Koo-Logo-Tagline-Slogan-Motto-Founder-Owner-480x480.jpg" alt="koo logo">
+            
         </div>
         <div class="search">
             <input id="search" type="search" placeholder="SEARCH">
@@ -47,7 +47,8 @@ function footer() {
         <div class="box3">
             <P>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS</p>  
             <li>|</li> 
-            <p>  <i class="uil uil-copyright"></i>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
+            <i class="uil uil-copyright"></i>
+            <p>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
             <!-- <P></P> -->
         </div>
     </div>

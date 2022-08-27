@@ -1,15 +1,15 @@
 * {
   margin: 0%;
   padding: 0%;
-  display: block;
+  /* display: block; */
 }
 #navbar {
-    display: flex;
+  display: flex;
   /* position: -webkit-sticky; */
   top: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 #container1 {
   display: flex;
@@ -111,7 +111,7 @@ body > p > a {
   width: 20%;
   border: 1px solid transparent;
 }
-#container2 > #add >video{
+#container2 > #add > video {
   width: 100%;
   margin-bottom: 50px;
 }
