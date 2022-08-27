@@ -632,6 +632,7 @@ body {
       border-radius: 2px;
       margin-bottom: 1px;
       font-size: 15px;
+      margin-top: 25px;
     }
   
     #btn button:last-child {
@@ -659,7 +660,7 @@ body {
     }
   
     hr {
-      width: 100px;
+      width: 5px;
       margin: 10px 15px;
     }
   
@@ -721,3 +722,32 @@ body {
       text-decoration: none;
       color: white;
     }
+    #top_stories{
+      width: 90%;
+      margin:20px auto;
+      display: flex;
+      overflow-y: scroll;
+      background-color: white;
+      padding: 15px;
+    }
+        #top_stories::-webkit-scrollbar {
+          width: 0;
+        }
+    #top_stories img{
+width: 200px;
+height: 200px;
+    }
+
+    #trendins{
+      width: 90%;
+      margin:30px auto;
+    }
+        #trendins button{
+          background-color: #2b2b2b;
+          color: white;
+          padding: 4px 8px;
+          font-weight: 800;
+          border-radius: 4px;
+          font-size: 15px;
+          margin-bottom: -15px;
+        }
