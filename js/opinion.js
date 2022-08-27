@@ -35,10 +35,8 @@ document.getElementById("search").addEventListener("keypress", (event) => {
 // ---------------------------------------body news---------------------------------------------
 
 
-
-let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=28ab8a6823464f37bb09605fd44a8feb`
-// let url = `http://api.mediastack.com/v1/news?access_key=d2e08db882ca6b76f6e63b69c98ba0e4&languages=en&countries=in`
-// // let url = `http://api.mediastack.com/v1/news?access_key=b6f104570a283e3d9f7e3ae522dd3e9d&keywords=tennis&countries=us,gb,de`
+// let url = `https://newsapi.org/v2/everything?q=ndtv&apiKey=866f8ab704f84601a6cedfa0d17251c7`
+let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=866f8ab704f84601a6cedfa0d17251c7`
 
 let data;
 async function getdata(url) {
