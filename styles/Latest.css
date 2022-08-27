@@ -78,10 +78,10 @@
     margin-right: 5px;
     border-radius: 5px;
   }
-  #container2 > #world_news {
+  #container2 > #Latest_news {
     width: 40%;
   }
-  #container2 > #world_news > div {
+  #container2 > #Latest_news > div {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -90,20 +90,20 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  #container2 > #world_news > div:hover {
+  #container2 > #Latest_news > div:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  #container2 > #world_news > div > img {
+  #container2 > #Latest_news > div > img {
     width: 20%;
     margin-right: 10px;
     height: 30%;
     margin-top: 15px;
     border-radius: 5px;
   }
-  #container2 > #world_news > div > div {
+  #container2 > #Latest_news > div > div {
     line-height: 25px;
   }
-  #container2 > #world_news > div > div > .publish {
+  #container2 > #Latest_news > div > div > .publish {
     font-size: 15px;
     font-style: italic;
   }

@@ -1,7 +1,7 @@
 let newsData = JSON.parse(localStorage.getItem("data")) || [];
 console.log(newsData);
-let worldNewsDiv = document.getElementById("world_news");
-worldNewsDiv.innerHTML = null;
+let LatestNewsDiv = document.getElementById("Latest_news");
+LatestNewsDiv.innerHTML = null;
 let div = document.createElement("div");
 // let box = document.createElement("div");
 let title = document.createElement("h1");
@@ -18,13 +18,13 @@ let content = document.createElement("p");
 content.innerText = `Content: ${newsData.content}`
 // box.append(title, published, desc);
 div.append(title,img, published, desc,content,author);
-worldNewsDiv.append(div);
+LatestNewsDiv.append(div);
 
 let inside = document.querySelector("#inside>p");
 inside.innerHTML = newsData.title;
 
 let trending;
-let worldNews;
+let LatestNews;
 let key="6ca668b05d17438286becc5f661348ac";
 async function myTrending() {
   // in try put whatever we want to work
