@@ -154,7 +154,7 @@
 #cnt02 {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 75%;
     height: 3963px;
     border: 1px solid green;
 }
@@ -184,3 +184,6 @@
     font-size: 14px;
 }
 
+#cnt02 nav{
+    margin: 20px 0 20px 0;
+}

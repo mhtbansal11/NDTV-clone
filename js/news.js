@@ -10,11 +10,13 @@ function append(data) {
     document.getElementById('time').innerText = `Updated: ${data.publishedAt}`;
     document.getElementById('img').src = data.urlToImage;
 
-    let img = document.createElement('img');
-    img.src = el.urlToImage;
-    let div = document.createElement('div');
+    // let img = document.createElement('img');
+    // img.id = 'bigimg'
+    // img.src = data.urlToImage;
+    document.getElementById('bimg').src = data.urlToImage;
+        let div = document.createElement('div');
     div.innerText = data.content
-    cnt.append(img,div)
+    cnt.append(div)
 };
 
 
