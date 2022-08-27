@@ -45,7 +45,9 @@ function footer() {
             <P>ART & DESIGN</P>
         </div>
         <div class="box3">
-            <P>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS     |     <i class="uil uil-copyright"></i>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
+            <P>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS</p>  
+            <li>|</li> 
+            <p>  <i class="uil uil-copyright"></i>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
             <!-- <P></P> -->
         </div>
     </div>

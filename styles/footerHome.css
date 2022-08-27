@@ -4,7 +4,7 @@ body {
 #container_footer{
     width: 100%;
     bottom: 0;
-    position: sticky;
+    /* position: sticky; */
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
@@ -70,12 +70,9 @@ body {
     margin-bottom: 20px;
 }
 #container2>.box3{
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     font-size: 13px;
     justify-content: space-between;
 }
-/* #container2>.box3>p:first-child{
-    /* margin-right: 20px; */
-    /* border-right: 1px solid red; */
-} */
+

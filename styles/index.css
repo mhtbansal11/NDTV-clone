@@ -33,7 +33,9 @@ body {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-
+#business > a{
+  text-decoration: none;
+}
 #business > a > h2 {
   text-align: center;
   font-size: 15px;
@@ -99,6 +101,9 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#entertainment > a{
+  text-decoration: none;
 }
 #entertainment > a > h2 {
   text-align: center;
@@ -166,6 +171,9 @@ body {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+#general > a{
+  text-decoration: none;
+}
 #general > a > h2 {
   text-align: center;
   font-size: 15px;
@@ -231,6 +239,9 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#health > a{
+  text-decoration: none;
 }
 #health > a > h2 {
   text-align: center;
@@ -298,6 +309,9 @@ body {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+#science > a{
+  text-decoration: none;
+}
 #science > a > h2 {
   text-align: center;
   font-size: 15px;
@@ -363,6 +377,9 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#sports > a{
+  text-decoration: none;
 }
 #sports > a > h2 {
   text-align: center;
@@ -430,6 +447,9 @@ body {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+#technology > a{
+  text-decoration: none;
+}
 #technology > a > h2 {
   text-align: center;
   font-size: 15px;
@@ -495,6 +515,9 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#india > a{
+  text-decoration: none;
 }
 #india > a > h2 {
   text-align: center;
