@@ -34,7 +34,7 @@ inside.innerHTML = newsData.title;
 
 let trending;
 let LatestNews;
-let key="6ca668b05d17438286becc5f661348ac";
+let key="e56af2cd452e4a229a9908b9bfb62d8d";
 async function myTrending() {
   // in try put whatever we want to work
   try {

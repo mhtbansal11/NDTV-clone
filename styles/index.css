@@ -10,17 +10,17 @@ body {
 }
 #category {
   width: 90%;
-  margin: 3% 9%;
-  /* margin:80px auto; */
+  /* margin: 3% 9%; */
+  margin: 80px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px 30px;
   /* justify-content: space-between; */
   /* padding: 50px; */
 }
 
 #business {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -87,7 +87,7 @@ body {
 }
 
 #entertainment {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -153,7 +153,7 @@ body {
 }
 
 #general {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -219,7 +219,7 @@ body {
 }
 
 #health {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -285,7 +285,7 @@ body {
 }
 
 #science {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -351,7 +351,7 @@ body {
 }
 
 #sports {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -417,7 +417,7 @@ body {
 }
 
 #technology {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -483,7 +483,7 @@ body {
 }
 
 #india {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding: 20px;
   border-radius: 10px;
@@ -565,7 +565,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  padding:0 3% ;
+  padding: 0 3%;
   /* gap: 10px; */
 }
 
@@ -578,7 +578,7 @@ body {
   height: 100%;
   border-radius: 5px;
 }
-#part div video{
+#part div video {
   width: 90%;
 }
 #upon {
@@ -621,7 +621,7 @@ video {
 
 #btn {
   /* width: 80%; */
-  padding:0 3%;
+  padding: 0 3%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -653,8 +653,8 @@ section {
   padding: 20px;
   /* justify-content: space-evenly; */
 }
-section >div{
-width: 20%;
+section > div {
+  width: 20%;
 }
 section div h5 {
   text-align: left;

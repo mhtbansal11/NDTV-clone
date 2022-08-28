@@ -10,7 +10,7 @@ document.querySelector("#footer").innerHTML += footerInside();
 let trending;
 let worldNews;
 // let key = "01e4b4bb46844c7f85fac3ee76078269";
-let key = `12bb5c24fa8345d9a01612d2c7b9a129`
+let key = `e56af2cd452e4a229a9908b9bfb62d8d`
 async function myTrending() {
   // in try put whatever we want to work
   try {
@@ -52,7 +52,7 @@ async function worldNewsCountry(value) {
   try {
     // let country = document.getElementById("country").value;
     // console.log("country:",country)
-    if (value == "worldNews") {
+    if (value === "worldNews") {
       myWorldNews();
     } else {
       let stream = await fetch(
@@ -135,27 +135,28 @@ let NewsData = (element) => {
   window.location.href = "./news.html";
 };
 
-document.getElementById('search_input').addEventListener('click', show)
-function show() {
-  document.getElementById('search_input').style.visibility = "hidden"
-  document.getElementById('search').style.visibility = "visible"
 
-}
+// document.getElementById('search_input').addEventListener('click', show)
+// function show() {
+//   document.getElementById('search_input').style.visibility = "hidden"
+//   document.getElementById('search').style.visibility = "visible"
 
-document.getElementById('search').addEventListener('keydown', search)
-async function search(event) {
-  if (event.key == "Enter") {
-    let search1 = document.getElementById("search").value;
-    let obj = {
-      que: search1,
-    }
-    let url = `https://newsapi.org/v2/everything?q=${search1}&apiKey=cac2a3600da541eebf8893025a6f052a`;
-    let res = await fetch(url);
-    let data = await res.json();
+// }
 
-    (data.articles);
-    localStorage.setItem("query", JSON.stringify(obj));
-    window.location.href = "search.html";
+// document.getElementById('search').addEventListener('keydown', search)
+// async function search(event) {
+//   if (event.key == "Enter") {
+//     let search1 = document.getElementById("search").value;
+//     let obj = {
+//       que: search1,
+//     }
+//     let url = `https://newsapi.org/v2/everything?q=${search1}&apiKey=cac2a3600da541eebf8893025a6f052a`;
+//     let res = await fetch(url);
+//     let data = await res.json();
 
-  }
-}
+//     (data.articles);
+//     localStorage.setItem("query", JSON.stringify(obj));
+//     window.location.href = "search.html";
+
+//   }
+// }

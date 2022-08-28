@@ -94,7 +94,7 @@ function dave(el) {
 
 
 let get = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
+    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e56af2cd452e4a229a9908b9bfb62d8d`;
     let res = await fetch(url)
     let data = await res.json()
     console.log(data)

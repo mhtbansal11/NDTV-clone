@@ -13,7 +13,7 @@ document.getElementById("search").addEventListener("keypress", (event) => {
     let query = document.getElementById("s").value;
 
     function data(query) {
-      let url = `https://newsapi.org/v2/everything?q=${query}&apiKey=28ab8a6823464f37bb09605fd44a8feb`;
+      let url = `https://newsapi.org/v2/everything?q=${query}&apiKey=efaf4c9a36944122b6eca506c319dcd2`;
       getsearch(url);
       async function getsearch(url) {
         let res = await fetch(url);
@@ -28,8 +28,8 @@ document.getElementById("search").addEventListener("keypress", (event) => {
 
 // ---------------------------------------body news---------------------------------------------
 
-// let url = `https://newsapi.org/v2/everything?q=ndtv&apiKey=866f8ab704f84601a6cedfa0d17251c7`
-let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=866f8ab704f84601a6cedfa0d17251c7`;
+// let url = `https://newsapi.org/v2/everything?q=ndtv&apiKey=efaf4c9a36944122b6eca506c319dcd2`
+let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=efaf4c9a36944122b6eca506c319dcd2`;
 
 let data;
 async function getdata(url) {
@@ -91,27 +91,25 @@ function append(data) {
     cnt.append(div1);
   });
 }
-document.getElementById('search_input').addEventListener('click', show)
+document.getElementById("search_input").addEventListener("click", show);
 function show() {
-  document.getElementById('search_input').style.visibility = "hidden"
-  document.getElementById('search').style.visibility = "visible"
-
+  document.getElementById("search_input").style.visibility = "hidden";
+  document.getElementById("search").style.visibility = "visible";
 }
 
-document.getElementById('search').addEventListener('keydown', search)
+document.getElementById("search").addEventListener("keydown", search);
 async function search(event) {
   if (event.key == "Enter") {
     let search1 = document.getElementById("search").value;
     let obj = {
       que: search1,
-    }
+    };
     let url = `https://newsapi.org/v2/everything?q=${search1}&apiKey=cac2a3600da541eebf8893025a6f052a`;
     let res = await fetch(url);
     let data = await res.json();
 
-    (data.articles);
+    data.articles;
     localStorage.setItem("query", JSON.stringify(obj));
     window.location.href = "search.html";
-
   }
 }

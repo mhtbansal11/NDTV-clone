@@ -5,7 +5,7 @@ document.querySelector("#nav2").innerHTML += navbar2Home();
 import footer from "../components/footer.js";
 document.querySelector("#footer").innerHTML += footer();
 
-let key = "01e4b4bb46844c7f85fac3ee76078269";
+let key = "e56af2cd452e4a229a9908b9bfb62d8d";
 let businessData;
 let entertainmentData;
 let generalData;
@@ -331,7 +331,7 @@ let NewsData = (element) => {
 
 
 
-let url = `https://newsdata.io/api/1/news?apikey=pub_10641d3e00c5e50c779d9745c9558c6bd7715&q=job&country=in`;
+let url = `https://newsdata.io/api/1/news?apikey=pub_10596d448c2f0018dc245e89c54c74082de67&q=job`;
 
 let DaTa = [];
 let pagesize = 1;
@@ -416,7 +416,7 @@ function save(el) {
     localStorage.setItem('news', JSON.stringify(el));
     window.location.href = "./news_detail.html";
 }
-let urls = `https://newsdata.io/api/1/news?apikey=pub_10641d3e00c5e50c779d9745c9558c6bd7715&q=style&country=in`;
+let urls = `https://newsdata.io/api/1/news?apikey=pub_10596d448c2f0018dc245e89c54c74082de67`;
 
 
 
@@ -452,7 +452,7 @@ async function gets() {
     // console.log(data)
     Dataa = data.results
 }
-let urlss = `https://newsdata.io/api/1/news?apikey=pub_10641d3e00c5e50c779d9745c9558c6bd7715&q=world%20news`;
+let urlss = `https://newsapi.org/v2/top-headlines?language=en&apiKey=${key}`;
 
 let Dataas = [];
 let Pagsize = 1;
@@ -484,9 +484,9 @@ async function getss() {
     let res = await fetch(urlss)
     let data = await res.json()
     // console.log(data)
-    Dataas = data.results
+    Dataas = data.articles
 }
-let urlsss = `https://newsdata.io/api/1/news?apikey=pub_10641d3e00c5e50c779d9745c9558c6bd7715&q=south%20india&country=in&category=business,food,health,politics,top `;
+let urlsss = `https://newsdata.io/api/1/news?apikey=pub_10596d448c2f0018dc245e89c54c74082de67&q=south%20india&country=in`;
 
 let Dataass = [];
 let Pasize = 1;
@@ -521,16 +521,23 @@ async function getsss() {
     Dataass = data.results
 }
 
-let urlssss = `https://newsdata.io/api/1/news?apikey=pub_10641d3e00c5e50c779d9745c9558c6bd7715&q=cities`;
+async function getsssz() {
+    let res = await fetch(urlsss)
+    let data = await res.json()
+    // console.log(data)
+    Dataassz = data.results
+}
 
-let Dataasss = [];
+let urlssss = `https://newsdata.io/api/1/news?apikey=pub_10596d448c2f0018dc245e89c54c74082de67&q=cities&country=in`;
+
+let Dataassz = [];
 let Psize = 1;
 let CentPage = 1;
 async function rndersss() {
-    await getsss()
+    await getsssz()
     var contains = ""
-    console.log(Dataasss)
-    Dataasss.filter((rowss, index) => {
+    console.log(Dataassz)
+    Dataassz.filter((rowss, index) => {
         let start = (CentPage - 1) * Psize
         let end = CentPage * Psize
 
@@ -558,11 +565,11 @@ function etn() {
     window.location.href = './entertainment.html';
 }
 let gt = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=cac2a3600da541eebf8893025a6f052a`;
+    let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e56af2cd452e4a229a9908b9bfb62d8d`;
     let res = await fetch(url)
     let data = await res.json()
     console.log(data.articles)
-    append(data.articles)
+    appends(data.articles)
 
 
 }
@@ -637,7 +644,7 @@ document.getElementById('ad2').addEventListener('click', function () {
 // _________________________________________top stories_______________________________
 
 async function a() {
-    let url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=866f8ab704f84601a6cedfa0d17251c7';
+    let url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=efaf4c9a36944122b6eca506c319dcd2';
 
     let res = await fetch(url);
     let data = await res.json();
@@ -681,7 +688,7 @@ async function appenda(data) {
 
 
 async function b() {
-    let url = 'https://newsapi.org/v2/everything?q=apple&from=2022-08-25&to=2022-08-25&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
+    let url = 'https://newsapi.org/v2/everything?q=apple&from=2022-08-25&to=2022-08-25&sortBy=popularity&apiKey=efaf4c9a36944122b6eca506c319dcd2&pageSize=3';
 
     let res = await fetch(url);
     let data = await res.json();
@@ -734,7 +741,7 @@ async function appendb(data) {
 
 async function c() {
 
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3`
+    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=efaf4c9a36944122b6eca506c319dcd2&pageSize=3`
     // let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
 
     let res = await fetch(url);
@@ -786,7 +793,7 @@ function appendc(data) {
 
 
 async function d() {
-    let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
+    let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=efaf4c9a36944122b6eca506c319dcd2&pageSize=3';
 
     let res = await fetch(url);
     let data = await res.json();

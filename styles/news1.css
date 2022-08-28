@@ -100,7 +100,7 @@
 }
 
 #shorts {
-    border: 1px solid red;
+    border: 1px solid transparent;
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -156,7 +156,7 @@
     flex-direction: column;
     width: 75%;
     /* height: 3963px; */
-    border: 1px solid green;
+    border: 1px solid transparent;
 }
 
 #h3 {
@@ -186,4 +186,64 @@
 
 #cnt02 nav{
     margin: 20px 0 20px 0;
+}
+#cnt3 {
+    display: block;
+    gap: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+#div1 {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+    gap: 18px;
+}
+#div1:hover {
+    box-shadow: rgb(0, 0, 0, 0.14) 0px 0px 10px 0px;
+}
+#div1 img {
+    width: 144px;
+    height: 108px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#div2 {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+#div2 h2 {
+    font-size: 20px;
+    font-weight: 10;
+    cursor: pointer;
+    margin: 0;
+    line-height: 28px;
+}
+#div2 p:nth-child(3) {
+    color: #666666;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+#div2 p:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    justify-content: flex-start;
+    margin: 0;
+}
+#name {
+    color: #245E8A;
+    line-height: 18px;
+}
+#time {
+    color: #2E2E2E;
 }

@@ -9,7 +9,7 @@ document.querySelector("#footer").innerHTML += footerInside();
 
 let trending;
 let LatestNews;
-let key = `12bb5c24fa8345d9a01612d2c7b9a129`;
+let key = `e56af2cd452e4a229a9908b9bfb62d8d`;
 async function myTrending() {
   // in try put whatever we want to work
   try {
