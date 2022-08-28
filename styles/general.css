@@ -1,0 +1,111 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* display: block; */
+  }
+  #navbar {
+      display: flex;
+    /* position: -webkit-sticky; */
+    top: 0;
+  }
+  body {
+    font-family: Roboto, sans-serif;
+  }
+  #container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  #container1 > h1 {
+    margin-left: 50px;
+  }
+  body > p {
+    display: flex;
+    margin-left: 50px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #b0c5d4;
+  }
+  body > p > a {
+    text-decoration: none;
+    color: #598aad;
+  }
+  #container2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #container2 > #trending {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+      align-items: center; */
+  }
+  
+  #container2 > #trending > h2 {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0px;
+    /* font-family: var(--ff-one); */
+    background-color: #f5f5f5;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid transparent;
+  }
+  #container2 > #trending > div {
+    display: flex;
+    /* font-size: 10px; */
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+    line-height: 15px;
+    /* justify-content: space-between; */
+    cursor: pointer;
+  }
+  #container2 > #trending > div:hover {
+    color: blue;
+  }
+  #container2 > #trending > div > img {
+    width: 30%;
+    height: 80%;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  #container2 > #general {
+    width: 40%;
+  }
+  #container2 > #general > div {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #container2 > #general > div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #container2 > #general > div > img {
+    width: 20%;
+    margin-right: 10px;
+    height: 30%;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  #container2 > #general > div > div {
+    line-height: 25px;
+  }
+  #container2 > #general > div > div > .publish {
+    font-size: 15px;
+    font-style: italic;
+  }
+  #container2 > #add {
+    width: 20%;
+    border: 1px solid transparent;
+  }
+  #container2 > #add >video{
+    width: 100%;
+    margin-bottom: 50px;
+  }

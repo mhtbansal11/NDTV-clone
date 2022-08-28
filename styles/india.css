@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+#top_stories {
+  width: 15%;
+  margin-right: 10px;
+}
+#last {
+  width: 15%;
+}
+#center {
+  width: 68%;
+  margin: 0 10px;
+  display: grid;
+}
+#rouat {
+  width: 80%;
+  margin: 15px auto;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#rouat i {
+  font-size: 18px;
+}
+
+#containers {
+  width: 100%;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+i {
+  font-size: 30px;
+}
+#first {
+  width: 90%;
+  display: flex;
+  /* border: 1px solid rebeccapurple; */
+  margin: 8px 0;
+}
+#first img {
+  width: 80px;
+  height: 80px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+#trend {
+  padding: 6px;
+  text-transform: uppercase;
+  background-color: #bdb2b6;
+  text-align: center;
+}
+#second {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#second img {
+  width: 150px;
+  height: 100px;
+  margin: 12px;
+  border-radius: 5px;
+}
+#second:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#press {
+  display: flex;
+  margin: 8px 0;
+}
+#headline {
+  padding: 10px;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 900;
+}
+#two {
+  display: flex;
+}
+#place {
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+#center p {
+  font-size: 18px;
+  color: #2e2e2e;
+}
+#title {
+  width: 80%;
+  font-size: 40px;
+  font-weight: 800;
+}
+a {
+  color: blue;
+}
+

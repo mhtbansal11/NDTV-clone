@@ -1,0 +1,93 @@
+body {
+    font-family: Roboto, sans-serif;
+  }
+#container_footer{
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2% 0%;
+}
+#container_footer>#container1{
+    width: 15%;
+    border-right: 1px solid black;
+    
+}
+#container_footer>#container1 >a>img{
+    cursor: pointer;
+    width: 50%;
+}
+#container_footer>#container1>div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: left; */
+    margin-bottom: 10px;
+}
+#container_footer>#container1>div>img{
+    width: 20%;
+}
+/* #container_footer>#container1>.search{
+    padding: 0px 20px 0px 0px;
+} */
+#container_footer>#container1>.search>input{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    text-align: left;
+    /* width: 100%; */
+}
+#container_footer>#container1>.search>i{
+    background-color: white;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#container2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#container2>.box1{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+#container2>.box2{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+#container2>.box2>a{
+    text-decoration: none;
+    color: black;
+}
+#container2>.box3{
+    width: 80%;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/* 
+#container2>.box3>p:first-child{
+     margin-right: 20px; 
+     border-right: 1px solid red; 
+}
+*/

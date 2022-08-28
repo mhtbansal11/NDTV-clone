@@ -1,0 +1,527 @@
+/* ____________________________navbar style _____________________________ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    background-color: #eaeaea;
+
+}
+
+
+
+
+/* ____________________________body style____________________________ */
+
+#ad1 {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#ad1 p {
+    font-size: 11px;
+    color: #b7b7b7;
+
+    margin: 11px 0 4px 0;
+}
+
+#ad2 p {
+    margin: 0 0 2px;
+    text-align: center;
+    font-size: 11px;
+    color: grey;
+
+
+}
+
+#gc {
+    display: flex;
+    margin: 0 42px 0 42px;
+    width: 93%;
+    gap: 25px;
+    font-family: Roboto, sans-serif;
+   
+}
+
+#a {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+   
+    gap: 15px;
+
+}
+
+#b {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+   
+
+}
+
+#c {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+   
+
+}
+
+#a div h2 {
+    font-size: 20px;
+    margin: 15px;
+    font-weight: 800;
+
+
+}
+
+#a div h3 {
+    font-size: 16px;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+#bimg {
+    width: 100%;
+    height: 170px;
+    cursor: pointer;
+    background-image: url('https://c.ndtvimg.com/2022-08/tkf34lk8_arvind-kejriwal-650_650x400_26_August_22.jpg?downsize=340:209');
+}
+
+#a div {
+    background-color: white;
+
+}
+
+#ts {
+    margin: 12px 15px 15px;
+    cursor: pointer;
+}
+
+#topcnt {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ___________________________appending style ________________________________ */
+
+#topdiv {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+#topimg {
+    width: 105px;
+    height: 79px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#topdiv a {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+#topcnt {
+    margin-bottom: 15px;
+}
+
+/* _______________________lastdiv_________________________________ */
+
+#ldiv {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0 42px 0 42px;
+    width: 93%;
+    margin-top: 18px;
+    font-family: Roboto, sans-serif;
+
+}
+
+#opmain {
+    display: block;
+    width: 73.7%;
+    background-color: white;
+    margin: 0;
+}
+
+#link {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 10px 15px;
+}
+
+#link a:first-child {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#link a:last-child {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 15px;
+}
+
+#opcnt {
+    display: flex;
+    width: 97%;
+    margin: 0 15px 0 15px;
+    padding-bottom: 15px;
+    gap: 24px;
+    height: 106px;
+}
+
+#opdiv {
+    display: flex;
+    width: 33.3%;
+    gap: 15px;
+    height: 100%;
+
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+#opcnt div:nth-child(1) {
+    border-right: 1px solid grey;
+
+
+}
+
+#opcnt div:nth-last-child(2) {
+    border-right: 1px solid grey;
+
+
+}
+
+#div1 a:first-child {
+    font-size: 14px;
+    line-height: 19px;
+    color: #2b2b2b;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#div1 a:last-child {
+    font-size: 12px;
+    line-height: 14px;
+    color: #909090;
+    cursor: pointer;
+}
+
+#opimg {
+    width: 100px;
+    height: 75px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+/* _______________________________middle div______________________________ */
+
+
+#b1 {
+
+    background-color: white;
+}
+
+#b1 div {
+    border-radius: 3px;
+    width: 100%;
+    height: 280px;
+    background-image: url('https://c.ndtvimg.com/2020-06/7gpah8k8_fifa-logo-afp_625x300_12_June_20.jpg?downsize=570:351');
+}
+
+#b1 h1 {
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+    padding: 13px 15px;
+    margin: 0;
+}
+
+#b2 {
+    margin: 15px 0 15px 0;
+    display: flex;
+    gap: 16px;
+}
+
+#b2a {
+    background-color: white;
+    width: 49%;
+    height: 224px;
+
+
+}
+
+#b2a div {
+    width: 277px;
+    height: 170px;
+    border-radius: 3px;
+    background-image: url('https://c.ndtvimg.com/2022-08/c23smqc8_uu-lalit_650x400_15_August_22.jpg?downsize=277:170');
+}
+
+#b2a h3 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 7px !important;
+    margin: auto;
+    color: #2b2b2b;
+}
+
+
+#b2b {
+    height: 243px;
+    width: 49%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#s1 {
+    /* width: 99%; */
+    height: 169px;
+    background-size: 100% 100%;
+    background-image: url('https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_200%2Cw_340%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/67f52203b868f6b29da6792ba8b301ac.png');
+
+}
+
+#s1 div {
+    background: #F59323;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0 7px 7px 0;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+
+#s1 div::before {
+    content: 'Sponsored';
+    font-family: Roboto, Geneva, 'Lucida Console', sans-serif;
+    font-size: 11px;
+
+
+}
+
+#b2b a:nth-child(2) {
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 900;
+    line-height: 19px;
+    margin: 7px 15px 3px 15px;
+    cursor: pointer;
+
+}
+
+#b2b a:last-child {
+    font-size: 11px;
+    color: #666666;
+    font-family: Roboto, sans-serif;
+    margin: 7px 15px 29px 15px;
+    cursor: pointer;
+
+
+}
+
+/* ________________________________little data appending __________________________ */
+
+#b3 {
+    display: flex;
+    width: 100%;
+   
+    gap: 15px;
+
+
+}
+
+#b3a {
+    display: flex;
+    width: 68%;
+   
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    padding: 5px 0 5px 0;
+}
+
+#b3b {
+   
+    height: 236px;
+
+    width: 30%;
+}
+
+#v1 {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+
+#b3div {
+    display: flex;
+
+    margin: 0px 15px 0px 15px;
+    align-items: center;
+}
+
+#b3img {
+    width: 100px;
+    height: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+#b3h3 {
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+
+#b3a div:nth-last-child(2) {
+    border-bottom: 1px solid #aeaeae;
+    border-top: 1px solid #aeaeae;
+
+
+}
+
+
+
+#b4 {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+   
+    height: 236px;
+    margin: 15px 0 15px 0;
+    color: white;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#b4 div:first-child {
+    width: 33%;
+
+    background-image: url('https://c.ndtvimg.com/2022-08/te2uk6b_irfan-pathan-cobra-twitter_295x200_26_August_22.jpg?downsize=212:236');
+}
+
+#b4 div:nth-child(2) {
+    width: 33%;
+
+    background-image: url('https://c.ndtvimg.com/2022-08/lvamvgvg_akshay-hotd_295x200_26_August_22.jpg?downsize=212:236');
+}
+
+#b4 div:last-child {
+    width: 33%;
+    background-image: url('https://c.ndtvimg.com/2022-08/l99fsch8_delhi-crime-2_295x200_26_August_22.jpg?downsize=212:236');
+}
+
+
+
+
+
+
+
+
+
+
+#b5 {
+    display: flex;
+    width: 100%;
+   
+    gap: 15px;
+
+
+}
+
+#b5a {
+    display: flex;
+    width: 68%;
+   
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    padding: 5px 0 5px 0;
+}
+
+#b5b {
+   
+    height: 236px;
+
+    width: 30%;
+}
+
+#v2 {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+#b5div {
+    display: flex;
+
+    margin: 0px 15px 0px 15px;
+    align-items: center;
+}
+
+#b5img {
+    width: 100px;
+    height: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+#b5h3 {
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+
+#b5a div:nth-last-child(2) {
+    border-bottom: 1px solid #aeaeae;
+    border-top: 1px solid #aeaeae;
+
+
+}
+
+
