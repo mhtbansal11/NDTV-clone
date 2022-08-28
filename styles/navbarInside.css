@@ -90,6 +90,8 @@
             /* margin-right: 85px; */
         }
 
-
+#search {
+    visibility: hidden;
+}
 
         

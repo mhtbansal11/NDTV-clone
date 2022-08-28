@@ -78,3 +78,6 @@ body {
     cursor: pointer;
 
 }
+#search{
+    visibility: hidden;
+}

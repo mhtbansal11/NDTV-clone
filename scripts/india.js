@@ -1,4 +1,11 @@
+import navbar1Inside from "../components/navbar1Inside.js";
+document.querySelector("#nav1").innerHTML += navbar1Inside();
 
+import navbar2Inside from "../components/navbar2Inside.js";
+document.querySelector("#nav2").innerHTML += navbar2Inside();
+
+import footerInside from "../components/footerInside.js";
+document.querySelector("#footer").innerHTML += footerInside();
 // let url = `http://api.mediastack.com/v1/news?access_key=70e250225f82fd05fd9a1daf86aa4a2a&languages=en&countries=in&limit=100`;
 let url = `http://api.mediastack.com/v1/news?access_key=ce7ea8c6513f70ccecd1e152e928ac83&languages=en&countries=in&limit=100`;
 
@@ -143,4 +150,28 @@ function append(data) {
 document.getElementById('logo').addEventListener('click', home)
 function home() {
     window.location.href = './index.html';
+}
+
+document.getElementById('search_input').addEventListener('click', show)
+function show() {
+    document.getElementById('search_input').style.visibility = "hidden"
+    document.getElementById('search').style.visibility = "visible"
+
+}
+document.getElementById('search').addEventListener('keydown', search)
+async function search(event) {
+    if (event.key == "Enter") {
+        let search1 = document.getElementById("search").value;
+        let obj = {
+            que: search1,
+        }
+        let url = `https://newsapi.org/v2/everything?q=${search1}&apiKey=cac2a3600da541eebf8893025a6f052a`;
+        let res = await fetch(url);
+        let data = await res.json();
+
+        (data.articles);
+        localStorage.setItem("query", JSON.stringify(obj));
+        window.location.href = "search.html";
+
+    }
 }

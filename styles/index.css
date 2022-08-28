@@ -74,7 +74,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #business > div:hover {
   color: blue;
@@ -140,7 +140,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #entertainment > div:hover {
   color: blue;
@@ -206,7 +206,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #general > div:hover {
   color: blue;
@@ -272,7 +272,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #health > div:hover {
   color: blue;
@@ -338,7 +338,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #science > div:hover {
   color: blue;
@@ -404,7 +404,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #sports > div:hover {
   color: blue;
@@ -470,7 +470,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #technology > div:hover {
   color: blue;
@@ -536,7 +536,7 @@ body {
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #india > div:hover {
   color: blue;

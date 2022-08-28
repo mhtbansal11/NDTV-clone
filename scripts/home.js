@@ -1,5 +1,35 @@
+import navbar1Home from "../components/navbar1Home";
+document.querySelector("#nav1").innerHTML += navbar1Home();
+import navbar2Home from "../components/navbar2Home.js";
+document.querySelector("#nav2").innerHTML += navbar2Home();
+import footer from "../components/footer.js";
+document.querySelector("#footer").innerHTML += footer();
 
+document.getElementById('searc_input').addEventListener('click', show)
+function show() {
+    document.getElementById('searc_input').style.visibility = "hidden"
+    document.getElementById('search').style.visibility = "visible"
 
+}
+document.getElementById('search').addEventListener('keydown', function(){
+    search(event)
+})
+async function search(event) {
+    if (event.key == "Enter") {
+        let search1 = document.getElementById("search").value;
+        let obj = {
+            que: search1,
+        }
+        let url = `https://masai-api.herokuapp.com/news?q=${search1}`;
+        let res = await fetch(url);
+        let data = await res.json();
+
+        (data.articles);
+        localStorage.setItem("query", JSON.stringify(obj));
+        window.location.href = "search.html";
+
+    }
+}
 
 // ________________________ads_____________________________
 
