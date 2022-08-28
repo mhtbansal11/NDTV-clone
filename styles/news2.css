@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* display: block; */
+  }
+  body {
+    font-family: Roboto, sans-serif;
+  }
+  #inside{
+    display: flex;
+    margin-left: 50px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #b0c5d4;
+    font-size: 15px;
+  }
+  #inside>a{
+      text-decoration: none;
+      color: #518eb9;
+  }
+  /* body > p > a {
+    text-decoration: none;
+    color: #b0c5d4;
+  } */
+  #container1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #container2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #container2 > #trending {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+        align-items: center; */
+  }
+  
+  #container2 > #trending > h2 {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0px;
+    font-family: var(--ff-one);
+    background-color: #f5f5f5;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid transparent;
+  }
+  #container2 > #trending > div {
+    display: flex;
+    /* font-size: 10px; */
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+    line-height: 15px;
+    /* justify-content: space-between; */
+    cursor: pointer;
+  }
+  #container2 > #trending > div:hover {
+    color: blue;
+  }
+  #container2 > #trending > div > img {
+    width: 30%;
+    margin-right: 5px;
+    height: 80%;
+    border-radius: 5px;
+  }
+  #container2 > #Latest_news {
+    width: 50%;
+  }
+  /* #container2>#Latest_news>div{
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  } */
+  #container2 > #Latest_news > div > img {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  #container2 > #Latest_news > div > div {
+    line-height: 30px;
+  }
+  #container2 > #Latest_news > div>h1{
+      margin-bottom: 20px;
+  }
+  #container2 > #Latest_news > div>p:nth-child(3){
+      font-style: italic;
+      color: #b0c5d4;
+      margin-bottom: 20px;
+  }
+  #container2 > #Latest_news > div>p{
+      font-style: normal;
+      color: black;
+      margin-top: 20px;
+  }

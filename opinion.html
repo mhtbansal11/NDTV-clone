@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imges/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imges/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imges/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imges/site.webmanifest" />
+    <link rel="mask-icon" href="imges/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/footerInside.css" />
+    <link rel="stylesheet" href="./styles/navbarInside.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="./styles/opinion.css" />
+  </head>
+
+  <body>
+    <div id="nav1"></div>
+    <div id="nav2"></div>
+
+    <div id="mininav">
+      <div id="m1">
+        <a href="./index.html" id="ar"> Home </a>
+        <a> Opinion </a>
+      </div>
+      <div id="m2">
+        <h1>OPINION</h1>
+        <div id="search">
+          <input type="search" id="s" placeholder="Option" />
+        </div>
+      </div>
+    </div>
+
+    <h2 id="h2">Featured Posts:</h2>
+
+    <div class="featur">
+      <nav id="postdiv">
+        <div>
+          <img
+            src="https://i.ndtvimg.com/i/2016-12/swati-chaturvedi_275x100_61483116997.jpg"
+            alt=""
+          />
+          <a href=""
+            >Opinion: Congress's Latest Big Blunder Reveals Its Fear Of
+            Kejriwal</a
+          >
+          <a href="">Swati Chaturvedi</a>
+        </div>
+        <div>
+          <img
+            src="https://c.ndtvimg.com/mrsbi67_ashutosh-new-275_275x100_29_August_18.jpg"
+            alt=""
+          />
+          <a href=""
+            >Opinion: The Timing Of Manish Sisodia's Raids Says Everything</a
+          >
+          <a href=""> Ashutosh </a>
+        </div>
+        <div>
+          <img
+            src="https://c.ndtvimg.com/2020-08/rke5h8vg_praveen-chakravarty-275_275x100_31_August_20.jpg"
+            alt=""
+          />
+          <a href=""
+            >Opinion: Is The 'Freebies' Debate Genuine Or A PM Modi 'Master
+            Stroke'?</a
+          >
+          <a href=""> Praveen Chakravarty </a>
+        </div>
+        <div>
+          <img
+            src="https://i.ndtvimg.com/i/2017-07/javed-ansari-275_275x100_61499928478.jpg"
+            alt=""
+          />
+          <a href=""
+            >Opinion: Arvind Kejriwal, Ahead Of The Others, Stakes A Claim To
+            2024</a
+          >
+          <a href="">Javed M. Ansari </a>
+        </div>
+      </nav>
+
+      <div id="short">
+        <h5>SHORTS VIDEOS</h5>
+        <a>By firework</a>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="cnt1">
+        <div>
+          <h3>COLUMNISTS</h3>
+          <a href="">Ashutosh</a>
+          <a href="">Brinda Karat</a>
+          <a href="">Chandan Mitra</a>
+          <a href="">Derek O'Brien</a>
+          <a href="">Maitreesh Ghatak</a>
+          <a href="">Mani Shankar Aiyar</a>
+          <a href="">Mihir Swarup Sharma</a>
+          <a href="">Shobhaa De</a>
+          <a href="">Swati Chaturvedi</a>
+          <a href="">Yashwant Sinha</a>
+          <a href="">More Columnists </a>
+        </div>
+
+        <div>
+          <h3>BLOGGERS</h3>
+          <a href="">Aunindyo Chakravarty </a>
+          <a href="">Jyotsna Mohan Bhargava</a>
+          <a href="">Ravish Kumar</a>
+          <a href="">Dr. Rajnish Jaiswal </a>
+          <a href=""> Manika Raikwar Ahirwal</a>
+          <a href="">IP Bajpai</a>
+          <a href=""> Rohit Khilnani </a>
+          <a href="">Saurabh Gupta</a>
+          <a href="">More Bloggers </a>
+        </div>
+      </div>
+
+      <div id="cnt2">
+        <div id="cnt20"></div>
+        <div id="cnt21"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+  import navbar1Inside from "./components/navbar1Inside.js";
+  document.querySelector("#nav1").innerHTML += navbar1Inside();
+
+  import navbar2Inside from "./components/navbar2Inside.js";
+  document.querySelector("#nav2").innerHTML += navbar2Inside();
+
+  import footerInside from "./components/footerInside.js";
+  document.querySelector("#footer").innerHTML += footerInside();
+</script>
+<script src="./scripts/opinion.js" type="module"></script>

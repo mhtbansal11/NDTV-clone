@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: sans-serif;
   background-color: #eaeaea;
 }
 
@@ -9,11 +9,14 @@ body {
   /* display: block; */
 }
 #category {
+  width: 90%;
+  margin: 3% 9%;
+  /* margin:80px auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-content: space-between;
-  padding: 50px;
+  gap: 50px;
+  /* justify-content: space-between; */
+  /* padding: 50px; */
 }
 
 #business {
@@ -33,9 +36,7 @@ body {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-#business > a{
-  text-decoration: none;
-}
+
 #business > a > h2 {
   text-align: center;
   font-size: 15px;
@@ -66,14 +67,14 @@ body {
 }
 #business > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
+  width: 100%;
   text-align: center;
   font-size: 18px;
   line-height: 18px;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #business > div:hover {
   color: blue;
@@ -101,9 +102,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#entertainment > a{
-  text-decoration: none;
 }
 #entertainment > a > h2 {
   text-align: center;
@@ -135,14 +133,14 @@ body {
 }
 #entertainment > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #entertainment > div:hover {
   color: blue;
@@ -170,9 +168,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#general > a{
-  text-decoration: none;
 }
 #general > a > h2 {
   text-align: center;
@@ -204,14 +199,14 @@ body {
 }
 #general > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #general > div:hover {
   color: blue;
@@ -239,9 +234,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#health > a{
-  text-decoration: none;
 }
 #health > a > h2 {
   text-align: center;
@@ -273,14 +265,14 @@ body {
 }
 #health > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #health > div:hover {
   color: blue;
@@ -308,9 +300,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#science > a{
-  text-decoration: none;
 }
 #science > a > h2 {
   text-align: center;
@@ -342,14 +331,14 @@ body {
 }
 #science > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #science > div:hover {
   color: blue;
@@ -377,9 +366,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#sports > a{
-  text-decoration: none;
 }
 #sports > a > h2 {
   text-align: center;
@@ -411,14 +397,14 @@ body {
 }
 #sports > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #sports > div:hover {
   color: blue;
@@ -446,9 +432,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#technology > a{
-  text-decoration: none;
 }
 #technology > a > h2 {
   text-align: center;
@@ -480,14 +463,14 @@ body {
 }
 #technology > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #technology > div:hover {
   color: blue;
@@ -515,9 +498,6 @@ body {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#india > a{
-  text-decoration: none;
 }
 #india > a > h2 {
   text-align: center;
@@ -549,14 +529,14 @@ body {
 }
 #india > div:nth-child(2) > h5 {
   color: black;
-  width: 95%;
-  text-align: center;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   /* margin: auto; */
   /* background-color: brown; */
   margin-top: -60px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 #india > div:hover {
   color: blue;
@@ -566,4 +546,214 @@ body {
   height: 90%;
   margin-right: 5px;
   border-radius: 5px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+#part {
+  /* width: 90%; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  padding:0 3% ;
+  /* gap: 10px; */
+}
+
+#part div {
+  border-radius: 5px;
+}
+
+#part div img {
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+}
+#part div video{
+  width: 90%;
+}
+#upon {
+  width: 17%;
+  height: 139px;
+  margin-top: -140px;
+  margin-left: 0px;
+  padding: 15px;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  color: white;
+  background-color: rgba(4, 31, 31, 0.875);
+}
+
+#upon #btnme {
+  margin-bottom: 2;
+  margin: auto;
+  background-color: yellow;
+  padding: 2px 12px;
+  border: none;
+  font-weight: 800;
+  border-radius: 3px;
+}
+#enter {
+  margin-bottom: 2;
+  margin: auto;
+  background-color: yellow;
+  padding: 2px 12px;
+  border: none;
+  font-weight: 800;
+  border-radius: 3px;
+}
+
+video {
+  width: 310px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#btn {
+  /* width: 80%; */
+  padding:0 3%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn button {
+  font-weight: 800;
+  color: white;
+  padding: 2px 8px;
+  background-color: #2b2b2b;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#btn button:last-child {
+  margin-right: 12%;
+}
+
+section {
+  width: 80%;
+  /* height: 40vh; */
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  padding: 20px;
+  /* justify-content: space-evenly; */
+}
+section >div{
+width: 20%;
+}
+section div h5 {
+  text-align: left;
+  /* margin: 10px 160px 10px 20px; */
+}
+/* 
+section div h5:last-child {
+  margin-right: 160;
+} */
+
+hr {
+  width: 5px;
+  margin: 10px 15px;
+}
+
+section h3 {
+  margin: 25px auto;
+}
+
+section img {
+  width: 70%;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* #world h3 {
+  margin: 25px auto;
+} */
+
+/* #world img {
+  width: 150px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px;
+} */
+
+/* #south h3 {
+  margin: 25px auto;
+} */
+
+/* #south img {
+  width: 150px;
+  height: auto;
+  margin: 15px 50px;
+  border-radius: 10px;
+} */
+
+/* #feshion h3 {
+  margin: 25px auto;
+} */
+
+/* #feshion img {
+  width: 150px;
+  height: auto;
+  margin: 15px 50px;
+  border-radius: 10px;
+} */
+
+/* #city h3 {
+  margin: 25px auto;
+} */
+
+/* #city img {
+  width: 150px;
+  height: auto;
+  margin: 15px 50px;
+  border-radius: 10px;
+} */
+a {
+  text-decoration: none;
+  color: white;
+}
+#top_stories {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  overflow-y: scroll;
+  background-color: white;
+  padding: 15px;
+}
+#top_stories::-webkit-scrollbar {
+  width: 0;
+}
+#top_stories img {
+  width: 200px;
+  height: 200px;
+}
+
+#trendins {
+  width: 90%;
+  margin: 30px auto;
+}
+#trendins button {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 4px 8px;
+  font-weight: 800;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: -15px;
 }

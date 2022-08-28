@@ -1,14 +1,14 @@
 function footer() {
   return `<div id="container_footer">
     <div id="container1">
-        <img src="https://www.whoistheownerof.com/wp-content/uploads/2018/03/owner-of-NDTV-India-website-Wiki-and-Logo-765x183.jpg" alt="ndtv logo">
+        <a href="./index.html"><img src="https://www.whoistheownerof.com/wp-content/uploads/2018/03/owner-of-NDTV-India-website-Wiki-and-Logo-765x183.jpg" alt="ndtv logo"></a>
         <p>FOLLOW US ON</p>
         <div>
             <i class="uil uil-facebook"></i>
             <i class="uil uil-twitter"></i> 
             <i class="uil uil-instagram"></i>
             <i class="uil uil-linkedin"></i>
-            
+            <img class="koo" src="https://www.logotaglines.com/wp-content/uploads/2021/10/Koo-Logo-Tagline-Slogan-Motto-Founder-Owner-480x480.jpg" alt="koo logo">
         </div>
         <div class="search">
             <input id="search" type="search" placeholder="SEARCH">
@@ -32,24 +32,20 @@ function footer() {
             <p>ARCHIVES</p>
         </div>
         <div class="box2">
-            <P style="background-color:#2b2b2b ; color: white; padding: 5px 10px; border-radius: 5px;">NDTV GROUP SITES</P>
-            <P>NEWS</P>
-            <P>BUSINESS</P>
-            <P>HINDI</P>
-            <P>MOVIES</P>
-            <P>CRICKET</P>
-            <P>FOOD</P>
-            <P>TECH</P>
-            <P>AUTO</P>
-            <P>TRAINS</P>
-            <P>ART & DESIGN</P>
+            <a href="#" style="background-color:#2b2b2b ; color: white; padding: 5px 10px; border-radius: 5px;">NDTV GROUP SITES</a>
+            <a href="./general.html">NEWS</a>
+            <a href="./business.html">BUSINESS</a>
+            <a href="#">HINDI</a>
+            <a href="./entertainment.html">MOVIES</a>
+            <a href="./sports.html">CRICKET</a>
+            <a href="#">FOOD</a>
+            <a href="./technology.html">TECH</a>
+            <a href="#">AUTO</a>
+            <a href="#">TRAINS</a>
+            <a href="#">ART & DESIGN</a>
         </div>
         <div class="box3">
-            <P>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS</p>  
-            <li>|</li> 
-            <i class="uil uil-copyright"></i>
-            <p>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
-            <!-- <P></P> -->
+            <P>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS     |     <i class="uil uil-copyright"></i>COPYRIGHT NDTV CONVERGENCE LIMITED 2022. ALL RIGHTS RESERVED</P>
         </div>
     </div>
 </div>`;
