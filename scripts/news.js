@@ -50,6 +50,9 @@ function trendingAppend(data) {
 
   data.forEach((element) => {
     let div = document.createElement("div");
+    div.addEventListener("click", function () {
+      NewsData(element);
+    });
 
     let title = document.createElement("h5");
     title.innerText = element.title;
@@ -68,3 +71,8 @@ function trendingAppend(data) {
     trendingDiv.append(div);
   });
 }
+let NewsData = (element) => {
+  console.log(element);
+  localStorage.setItem("data", JSON.stringify(element));
+  window.location.href = "./news.html";
+};
