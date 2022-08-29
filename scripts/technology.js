@@ -9,7 +9,8 @@ document.querySelector("#footer").innerHTML += footerInside();
 let trending;
 let technologyData;
 // let key = "01e4b4bb46844c7f85fac3ee76078269";
-let key = `e56af2cd452e4a229a9908b9bfb62d8d`
+// let key = `e56af2cd452e4a229a9908b9bfb62d8d`
+let key = `12bb5c24fa8345d9a01612d2c7b9a129`
 async function myTrending() {
   // in try put whatever we want to work
   try {

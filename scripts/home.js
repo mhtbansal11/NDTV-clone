@@ -46,7 +46,7 @@ document.getElementById('ad2').addEventListener('click', function () {
 // _________________________________________top stories_______________________________
 
 async function a() {
-    let url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=866f8ab704f84601a6cedfa0d17251c7';
+    let url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=12bb5c24fa8345d9a01612d2c7b9a129';
 
     let res = await fetch(url);
     let data = await res.json();
@@ -90,7 +90,7 @@ async function appenda(data) {
 
 
 async function b() {
-    let url = 'https://newsapi.org/v2/everything?q=apple&from=2022-08-25&to=2022-08-25&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
+    let url = 'https://newsapi.org/v2/everything?q=apple&from=2022-08-25&to=2022-08-25&sortBy=popularity&apiKey=12bb5c24fa8345d9a01612d2c7b9a129&pageSize=3';
 
     let res = await fetch(url);
     let data = await res.json();
@@ -144,7 +144,7 @@ async function appendb(data) {
 async function c() {
 
     let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3`
-    // let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
+    // let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=12bb5c24fa8345d9a01612d2c7b9a129&pageSize=3';
 
     let res = await fetch(url);
     let data = await res.json();
@@ -195,7 +195,7 @@ function appendc(data) {
 
 
 async function d() {
-    let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=866f8ab704f84601a6cedfa0d17251c7&pageSize=3';
+    let url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-08-26&sortBy=popularity&apiKey=12bb5c24fa8345d9a01612d2c7b9a129&pageSize=3';
 
     let res = await fetch(url);
     let data = await res.json();

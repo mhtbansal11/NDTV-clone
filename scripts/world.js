@@ -1,16 +1,17 @@
-import navbar1Inside from "../components/navbar1Inside.js";
-document.querySelector("#nav1").innerHTML += navbar1Inside();
+// import navbar1Inside from "../components/navbar1Inside.js";
+// document.querySelector("#nav1").innerHTML += navbar1Inside();
 
-import navbar2Inside from "../components/navbar2Inside.js";
-document.querySelector("#nav2").innerHTML += navbar2Inside();
+// import navbar2Inside from "../components/navbar2Inside.js";
+// document.querySelector("#nav2").innerHTML += navbar2Inside();
 
-import footerInside from "../components/footerInside.js";
-document.querySelector("#footer").innerHTML += footerInside();
+// import footerInside from "../components/footerInside.js";
+// document.querySelector("#footer").innerHTML += footerInside();
 
 let trending;
 let worldNews;
 // let key = "01e4b4bb46844c7f85fac3ee76078269";
-let key = `e56af2cd452e4a229a9908b9bfb62d8d`
+// let key = `e56af2cd452e4a229a9908b9bfb62d8d`
+let key = `12bb5c24fa8345d9a01612d2c7b9a129`
 async function myTrending() {
   // in try put whatever we want to work
   try {
@@ -50,8 +51,8 @@ myWorldNews();
 
 async function worldNewsCountry(value) {
   try {
-    // let country = document.getElementById("country").value;
-    // console.log("country:",country)
+    let country = document.getElementById("country").value;
+    console.log("country:",country)
     if (value === "worldNews") {
       myWorldNews();
     } else {
@@ -134,7 +135,6 @@ let NewsData = (element) => {
   localStorage.setItem("data", JSON.stringify(element));
   window.location.href = "./news.html";
 };
-
 
 // document.getElementById('search_input').addEventListener('click', show)
 // function show() {

@@ -13,7 +13,7 @@ document.getElementById("search").addEventListener("keypress", (event) => {
     let query = document.getElementById("s").value;
 
     function data(query) {
-      let url = `https://newsapi.org/v2/everything?q=${query}&apiKey=efaf4c9a36944122b6eca506c319dcd2`;
+      let url = `https://newsapi.org/v2/everything?q=${query}&apiKey=12bb5c24fa8345d9a01612d2c7b9a129`;
       getsearch(url);
       async function getsearch(url) {
         let res = await fetch(url);
@@ -29,7 +29,7 @@ document.getElementById("search").addEventListener("keypress", (event) => {
 // ---------------------------------------body news---------------------------------------------
 
 // let url = `https://newsapi.org/v2/everything?q=ndtv&apiKey=efaf4c9a36944122b6eca506c319dcd2`
-let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=efaf4c9a36944122b6eca506c319dcd2`;
+let url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=12bb5c24fa8345d9a01612d2c7b9a129`;
 
 let data;
 async function getdata(url) {
